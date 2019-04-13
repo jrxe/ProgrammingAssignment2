@@ -38,3 +38,22 @@ cacheSolve <- function(x, ...) {
     x$setminv(m)
     m
 }
+
+## Test example running the code and also R Output with included added comments. They are marked by using double hash characters ##
+## This is creating a matrix
+# > m1 <- matrix(c(1,3,55,22),nrow=2,ncol=2)
+## This is creating a special matrix object using makeCacheMatrix
+# > n1 <- makeCacheMatrix(m1)
+## This is running cacheSolve for the first time
+# > cacheSolve(n1)
+## This is the output by running cacheSolve(n1) for the first time
+#            [,1]         [,2]
+#[1,] -0.15384615  0.384615385
+#[2,]  0.02097902 -0.006993007
+## This is running cacheSolve for the second time
+#> cacheSolve(n1)
+## This is the output by running cacheSolve(n1) for a second time. Note the message explaning that the below results comes from the cach
+#Getting Inverse Matrix Cached Data
+#            [,1]         [,2]
+#[1,] -0.15384615  0.384615385
+#[2,]  0.02097902 -0.006993007
